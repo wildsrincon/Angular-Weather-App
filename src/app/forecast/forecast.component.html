@@ -1,3 +1,6 @@
-<div class="card">
-    <app-weather-card [weather]="weather" *ngFor="let weather of forecastService.weather$ | async"></app-weather-card>
+<div class="container">
+    <div class="card">
+        <app-weather-card [weather]="weather" *ngFor="let weather of forecastService.weather$ | async">
+        </app-weather-card>
+    </div>
 </div>
